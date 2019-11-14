@@ -1,6 +1,7 @@
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
 import us.codecraft.webmagic.Spider;
+import us.codecraft.webmagic.scheduler.QueueScheduler;
 import us.codecraft.webmagic.selector.Selectable;
 import us.codecraft.webmagic.processor.PageProcessor;
 
