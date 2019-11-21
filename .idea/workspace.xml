@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8d33293-259f-40ad-aade-bdea10436364" name="Default Changelist" comment="" />
+    <list default="true" id="e8d33293-259f-40ad-aade-bdea10436364" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/utilities/GovSubpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/whu/alumnispider/GovLeaderAlumniPageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/GovLeaderAlumniPageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ChuangshiPageProcessor.class" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +35,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MavenImportPreferences">
@@ -40,17 +46,19 @@
     </option>
   </component>
   <component name="ProjectId" id="1SofUIe6IyuyXqp82rhH2YrwmR3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/us/codecraft/webmagic-core/0.7.3/webmagic-core-0.7.3.jar!/" />
+    <property name="last_opened_file_path" value="C:/Program Files/Java/jdk1.8.0_181/jre/lib/mysql-connector-java-8.0.18.jar!/" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -68,7 +76,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LeaderAlumniPageProcessor">
+  <component name="RunManager" selected="Application.GovWebsitePageProcessor">
     <configuration name="ChuangshiPageProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ChuangshiPageProcessor" />
       <module name="AlumniSpider" />
@@ -90,6 +98,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GovLeaderAlumniPageProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="whu.alumnispider.GovLeaderAlumniPageProcessor" />
+      <module name="AlumniSpider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="whu.alumnispider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GovWebsitePageProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="whu.alumnispider.GovWebsitePageProcessor" />
+      <module name="AlumniSpider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="whu.alumnispider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LeaderAlumniPageProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeaderAlumniPageProcessor" />
       <module name="AlumniSpider" />
@@ -97,19 +131,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MRBKtvPageProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MRBKtvPageProcessor" />
-      <module name="AlumniSpider" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GovWebsitePageProcessor" />
+        <item itemvalue="Application.GovLeaderAlumniPageProcessor" />
         <item itemvalue="Application.LeaderAlumniPageProcessor" />
         <item itemvalue="Application.ChuangshiPageProcessor" />
-        <item itemvalue="Application.GithubRepoPageProcessor" />
-        <item itemvalue="Application.MRBKtvPageProcessor" />
         <item itemvalue="Application.GithubRepoPageProcessor" />
       </list>
     </recent_temporary>
@@ -130,64 +157,38 @@
       <workItem from="1572490286508" duration="7479000" />
       <workItem from="1572572697512" duration="1796000" />
       <workItem from="1572574559821" duration="40227000" />
+      <workItem from="1573784931962" duration="59736000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ChuangshiPageProcessor.java</url>
-          <line>79</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ChuangshiPageProcessor.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ChuangshiPageProcessor.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ChuangshiPageProcessor.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ChuangshiPageProcessor.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ChuangshiPageProcessor.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/GovLeaderAlumniPageProcessor.java</url>
-          <line>107</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/GovLeaderAlumniPageProcessor.java</url>
-          <line>102</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/GovLeaderAlumniPageProcessor.java</url>
-          <line>105</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/GovLeaderAlumniPageProcessor.java</url>
-          <line>106</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/src/main/java/whu/alumnispider/GovWebsitePageProcessor.java</url>
+          <line>130</line>
+          <option name="timeStamp" value="84" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

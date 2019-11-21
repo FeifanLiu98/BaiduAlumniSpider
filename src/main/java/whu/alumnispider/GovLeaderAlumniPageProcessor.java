@@ -1,12 +1,16 @@
+package whu.alumnispider;
+
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
 import us.codecraft.webmagic.Spider;
-import us.codecraft.webmagic.scheduler.QueueScheduler;
 import us.codecraft.webmagic.selector.Selectable;
 import us.codecraft.webmagic.processor.PageProcessor;
+import whu.alumnispider.DAO.AlumniDAO;
+import whu.alumnispider.parser.KeywordParser;
+import whu.alumnispider.utilities.GovLeaderPerson;
 
+import java.security.Key;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -22,6 +26,8 @@ public class GovLeaderAlumniPageProcessor implements PageProcessor {
 
     private Site site = Site.me().setSleepTime(150).setRetryTimes(2)
             .addHeader("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36");
+
+    public String tableName = "govMunicapleLeader";
 
     public Site getSite() {
         return site;
@@ -92,7 +98,6 @@ public class GovLeaderAlumniPageProcessor implements PageProcessor {
         }
     }
 
-    // TODO:
     public void GetLeaderInfo(Page page) {
         String govLeaderPositionXpath = "//strong[@class='long_name']/text()";
         String govLeaderNameXpayh = "//i[@class='red']/text()";
@@ -100,6 +105,8 @@ public class GovLeaderAlumniPageProcessor implements PageProcessor {
         Selectable govLeaderName;
         Selectable govLeaderPosition;
         Selectable govLeaderCV;
+        GovLeaderPerson person = new GovLeaderPerson();
+        KeywordParser parser = new KeywordParser();
 
         govLeaderName = page.getHtml().xpath(govLeaderNameXpayh);
         govLeaderPosition = page.getHtml().xpath(govLeaderPositionXpath);
@@ -107,13 +114,20 @@ public class GovLeaderAlumniPageProcessor implements PageProcessor {
         page.putField("govLeaderName", govLeaderName.toString());
         page.putField("govLeaderPosition", govLeaderPosition.toString());
         page.putField("govLeaderCV", govLeaderCV.toString());
-
+        person.setName(govLeaderName.toString());
+        person.setJobPosition(govLeaderPosition.toString());
+        person.setUrl(page.getUrl().toString());
+        // person.setPlaceBirth(govLeaderName.toString());
+        // person.setDateBirth(govLeaderName.toString());
+        parser.extractor(govLeaderCV.toString(), person);
+        new AlumniDAO().add(person, tableName);
+        System.out.println(person);
     }
 
     public static void main(String[] args) {
         Spider.create(new GovLeaderAlumniPageProcessor())
                 .addUrl("http://ldzl.people.com.cn/dfzlk/front/personProvince1.htm")
-                .thread(5)
+                .thread(3)
                 .run();
     }
 }
