@@ -4,6 +4,15 @@ public class GovSubpage {
     public String url;
     public String organizer;
 
+    public GovSubpage(String url, String organizer) {
+        this.url = url;
+        this.organizer = organizer;
+    }
+
+    public GovSubpage() {
+
+    }
+
     public String getUrl() {
         return this.url;
     }

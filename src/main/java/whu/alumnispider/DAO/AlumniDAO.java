@@ -23,7 +23,7 @@ public class AlumniDAO {
     }
 
     // read data in database.
-    public List<String> readFromGovWebsite(String tableName, String selectProperty) {
+    public List<String> readFromTable(String tableName, String selectProperty) {
         try {
             List<String> rets = new ArrayList<String>();
             String sql = "SELECT " + selectProperty +" FROM " + tableName;
@@ -64,7 +64,7 @@ public class AlumniDAO {
 
     public int add(GovSubpage govSubpage, String tableName) {
         try {
-            String sql = "INSERT INTO `test`." + tableName + "`(`url`, `organizer`)" + "VALUES (?, ?)";
+            String sql = "INSERT INTO `test`.`" + tableName + "`(`url`, `organizer`)" + "VALUES (?, ?)";
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
 
             preparedStatement.setString(1, govSubpage.getUrl());
@@ -76,5 +76,108 @@ public class AlumniDAO {
         }
 
         return -1;
+    }
+
+    /*
+    public int add(String str, String tableName) {
+        try {
+            String sql = "INSERT INTO `test`.`" + tableName + "`(`URL`)" + "VALUES (?)";
+            PreparedStatement preparedStatement = conn.prepareStatement(sql);
+            preparedStatement.setString(1, str);
+
+            return preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return -1;
+    }*/
+
+    public int add(String str, String property, String tableName) {
+        try {
+            String sql = "INSERT INTO `test`.`" + tableName + "`(`" + property +"`)" + "VALUES (?)";
+            PreparedStatement preparedStatement = conn.prepareStatement(sql);
+            preparedStatement.setString(1, str);
+
+            return preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return -1;
+    }
+
+    public int add(College college, String tableName) {
+        try {
+            String sql = "INSERT INTO `test`.`" + tableName + "`(`collegename`, `website`)" + "VALUES (?, ?)";
+            PreparedStatement preparedStatement = conn.prepareStatement(sql);
+
+            preparedStatement.setString(1, college.getName());
+            preparedStatement.setString(2, college.getWebsite());
+
+            return preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return -1;
+    }
+
+    public int add(School school, String tableName) {
+        try {
+            String sql = "INSERT INTO `test`.`" + tableName + "`(`schoolname`, `website`)" + "VALUES (?, ?)";
+            PreparedStatement preparedStatement = conn.prepareStatement(sql);
+
+            preparedStatement.setString(1, school.getName());
+            preparedStatement.setString(2, school.getWebsite());
+
+            return preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return -1;
+    }
+
+    public int update(String str, String property, String index, String tableName) {
+        try {
+            String sql = "UPDATE " + tableName + " SET " + property + "=\'"+ str + "\'" + "WHERE" + " id=" + index;
+            PreparedStatement preparedStatement = conn.prepareStatement(sql);
+
+            return  preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return -1;
+    }
+
+    public int update(int num, String property, String index, String tableName) {
+        try {
+            String sql = "UPDATE " + tableName + " SET " + property + "=\'"+ num + "\'" + "WHERE" + " id=" + index;
+            PreparedStatement preparedStatement = conn.prepareStatement(sql);
+
+            return  preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return -1;
+    }
+
+    public String getTableContent(String website){
+        try {
+            String sql = "SELECT table_content FROM `alumnus_v2` WHERE `website` = \'" + website + "\'";
+            PreparedStatement preparedStatement = conn.prepareStatement(sql);
+            ResultSet resultSet = stmt.executeQuery(sql);
+            if (resultSet.next()) {
+                String tableContent = resultSet.getString(1);
+                return tableContent;
+            }
+        }catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
     }
 }

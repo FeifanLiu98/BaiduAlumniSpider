@@ -1,11 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8d33293-259f-40ad-aade-bdea10436364" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/utilities/GovSubpage.java" afterDir="false" />
+    <list default="true" id="e8d33293-259f-40ad-aade-bdea10436364" name="Default Changelist" comment="Spider based on Baidu Search Engine">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/webmagic_core_0_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/webmagic_extension_0_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/SchoolWebsitePageProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/business/BusBasedOnLinkedInAlumniPageProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/gov/GovBasedOnBaiduAlumniInfoPageProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/gov/GovBasedOnBaiduBaikeNameProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/gov/GovBasedOnBaiduUrlPageProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/gov/GovCenterLeaderAlumniPageProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/gov/GovWebsitePageProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/parser/BaiduParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/parser/PropertyParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/propertyprocessor/BaikePropertyProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/utilities/College.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/utilities/Province.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/utilities/School.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/utilities/University.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/JobPositionExtractorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/KeywordExtractedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/NameExtractorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UnionYearRegexTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/birthDateParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Admin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/whu/alumnispider/GovLeaderAlumniPageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/GovLeaderAlumniPageProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ChuangshiPageProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/whu/alumnispider/DAO/AlumniDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/DAO/AlumniDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/whu/alumnispider/GovLeaderAlumniPageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/gov/GovMunicapleLeaderAlumniPageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/whu/alumnispider/GovWebsitePageProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/whu/alumnispider/parser/KeywordParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/parser/KeywordParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/whu/alumnispider/utilities/GovSubpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/utilities/GovSubpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/whu/alumnispider/utilities/ReExpUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/whu/alumnispider/utilities/ReExpUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/whu/alumnispider/DAO/AlumniDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/whu/alumnispider/DAO/AlumniDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/whu/alumnispider/GovLeaderAlumniPageProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/whu/alumnispider/GovWebsitePageProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/whu/alumnispider/parser/KeywordParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/whu/alumnispider/parser/KeywordParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/whu/alumnispider/pipeline/GovLeaderAlumnipipeline.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/whu/alumnispider/pipeline/GovLeaderAlumnipipeline.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/whu/alumnispider/scheduler/LevelLimitScheduler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/whu/alumnispider/scheduler/LevelLimitScheduler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/whu/alumnispider/utilities/GovLeaderPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/whu/alumnispider/utilities/GovLeaderPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/whu/alumnispider/utilities/GovSubpage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/whu/alumnispider/utilities/GovSubpage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/whu/alumnispider/utilities/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/whu/alumnispider/utilities/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/whu/alumnispider/utilities/ReExpUtility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/whu/alumnispider/utilities/ReExpUtility.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,16 +65,31 @@
     <expand />
     <select />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="AlumniSpider" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="XHTML File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="FeifanLiu98 &lt;kingofviking@qq.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -44,25 +97,39 @@
         <option name="mavenHome" value="C:/Program Files/apache-maven-3.6.0" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1SofUIe6IyuyXqp82rhH2YrwmR3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="XHTML File" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="C:/Program Files/Java/jdk1.8.0_181/jre/lib/mysql-connector-java-8.0.18.jar!/" />
+    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/us/codecraft/webmagic-extension/0.7.3/webmagic-extension-0.7.3.jar!/" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.44367817" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -76,34 +143,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GovWebsitePageProcessor">
-    <configuration name="ChuangshiPageProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ChuangshiPageProcessor" />
-      <module name="AlumniSpider" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GithubRepoPageProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GithubRepoPageProcessor" />
-      <module name="AlumniSpider" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GithubRepoPageProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GithubRepoPageProcessor" />
-      <module name="AlumniSpider" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GovLeaderAlumniPageProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="whu.alumnispider.GovLeaderAlumniPageProcessor" />
+  <component name="RunManager" selected="Application.GovBasedOnBaiduBaikeNameProcessor">
+    <configuration name="BaikePropertyProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="whu.alumnispider.propertyprocessor.BaikePropertyProcessor" />
       <module name="AlumniSpider" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="whu.alumnispider.*" />
+          <option name="PATTERN" value="whu.alumnispider.propertyprocessor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,12 +157,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GovWebsitePageProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="whu.alumnispider.GovWebsitePageProcessor" />
+    <configuration name="GovBasedOnBaiduAlumniInfoPageProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="whu.alumnispider.gov.GovBasedOnBaiduAlumniInfoPageProcessor" />
       <module name="AlumniSpider" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="whu.alumnispider.*" />
+          <option name="PATTERN" value="whu.alumnispider.gov.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,20 +170,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeaderAlumniPageProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeaderAlumniPageProcessor" />
+    <configuration name="GovBasedOnBaiduBaikeNameProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="whu.alumnispider.gov.GovBasedOnBaiduBaikeNameProcessor" />
       <module name="AlumniSpider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="whu.alumnispider.gov.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GovBasedOnBaiduUrlPageProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="whu.alumnispider.gov.GovBasedOnBaiduUrlPageProcessor" />
+      <module name="AlumniSpider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="whu.alumnispider.gov.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="birthDateParserTest.birthDateParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AlumniSpider" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="birthDateParserTest" />
+      <option name="METHOD_NAME" value="birthDateParserTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GovWebsitePageProcessor" />
-        <item itemvalue="Application.GovLeaderAlumniPageProcessor" />
-        <item itemvalue="Application.LeaderAlumniPageProcessor" />
-        <item itemvalue="Application.ChuangshiPageProcessor" />
-        <item itemvalue="Application.GithubRepoPageProcessor" />
+        <item itemvalue="Application.GovBasedOnBaiduBaikeNameProcessor" />
+        <item itemvalue="Application.BaikePropertyProcessor" />
+        <item itemvalue="JUnit.birthDateParserTest.birthDateParserTest" />
+        <item itemvalue="Application.GovBasedOnBaiduUrlPageProcessor" />
+        <item itemvalue="Application.GovBasedOnBaiduAlumniInfoPageProcessor" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +232,16 @@
       <workItem from="1572490286508" duration="7479000" />
       <workItem from="1572572697512" duration="1796000" />
       <workItem from="1572574559821" duration="40227000" />
-      <workItem from="1573784931962" duration="59736000" />
+      <workItem from="1573784931962" duration="100647000" />
+      <workItem from="1574738211300" duration="27939000" />
+      <workItem from="1574846174810" duration="173000" />
+      <workItem from="1574846352406" duration="1896000" />
+      <workItem from="1574908069641" duration="392000" />
+      <workItem from="1574908497354" duration="92732000" />
+      <workItem from="1575874253254" duration="52888000" />
+      <workItem from="1576203495048" duration="16721000" />
+      <workItem from="1577241975007" duration="93952000" />
+      <workItem from="1578898878503" duration="807000" />
     </task>
     <servers />
   </component>
@@ -182,15 +266,128 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Spider based on Baidu Search Engine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spider based on Baidu Search Engine" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/whu/alumnispider/GovWebsitePageProcessor.java</url>
-          <line>130</line>
-          <option name="timeStamp" value="84" />
+          <url>file://$PROJECT_DIR$/src/test/java/JobPositionExtractorTest.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/JobPositionExtractorTest.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/JobPositionExtractorTest.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/NameExtractorTest.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="146" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/whu/alumnispider/gov/GovBasedOnBaiduUrlPageProcessor.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/whu/alumnispider/gov/GovBasedOnBaiduUrlPageProcessor.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/whu/alumnispider/gov/GovBasedOnBaiduUrlPageProcessor.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/whu/alumnispider/gov/GovBasedOnBaiduUrlPageProcessor.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/whu/alumnispider/gov/GovCenterLeaderAlumniPageProcessor.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/whu/alumnispider/gov/GovWebsitePageProcessor.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/whu/alumnispider/gov/GovWebsitePageProcessor.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="159" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/whu/alumnispider/gov/GovBasedOnBaiduUrlPageProcessor.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/whu/alumnispider/gov/GovBasedOnBaiduAlumniInfoPageProcessor.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="193" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/UnionYearRegexTest.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/whu/alumnispider/gov/GovBasedOnBaiduAlumniInfoPageProcessor.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="200" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/whu/alumnispider/parser/KeywordParser.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="204" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/whu/alumnispider/parser/KeywordParser.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="207" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/whu/alumnispider/gov/GovBasedOnBaiduUrlPageProcessor.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="210" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/whu/alumnispider/gov/GovBasedOnBaiduUrlPageProcessor.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="213" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/whu/alumnispider/gov/GovBasedOnBaiduUrlPageProcessor.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="214" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/whu/alumnispider/propertyprocessor/BaikePropertyProcessor.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="274" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/AlumniSpider$BaikePropertyProcessor.ic" NAME="BaikePropertyProcessor Coverage Results" MODIFIED="1578286649434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>whu.alumnispider.propertyprocessor.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/AlumniSpider$GovWebsitePageProcessor.ic" NAME="GovWebsitePageProcessor Coverage Results" MODIFIED="1574826211333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>whu.alumnispider.*</FILTER>
+    </SUITE>
   </component>
 </project>
